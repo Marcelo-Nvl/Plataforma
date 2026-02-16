@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Denunciar</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<header>
+<div class="logo"><a href="home.html"><img src="c:\Users\acele\OneDrive\Desktop\Project 3d\ChatGPT Image Feb 14, 2026, 03_51_50 PM.png" height="60"  width="60"></a></div>
+<div class="menu-container">
+<div class="menu-3pontos" onclick="toggleMenu()">⋮</div>
+<div class="menu-dropdown" id="menuDropdown">
+<a href="home.html">Voltar</a>
+<a href="termos.html">Termos</a>
+<a href="sobre.html">Sobre</a>
+<a href="denunciar.html">Denunciar</a>
+</div>
+</div>
+</header>
+
+<main>
+<div class="section-box">
+<h2>Denúncia Segura</h2>
+
+<form id="denunciaForm">
+
+  <!-- Selecionar pessoa -->
+<label for="pessoa">Selecione a pessoa:</label>
+<select id="pessoa" name="pessoa" required>
+    <option value="">--Selecione--</option>
+    <option value="crianca">Criança</option>
+    <option value="adolescente">Adolescente</option>
+</select>
+
+<!-- Idade aparece apenas se criança ou adolescente -->
+<div id="idadeContainer" style="display:none;">
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" style="display:block;" />
+</div>
+
+
+    <!-- Tipo de violência -->
+    <label for="tipoViolencia">Tipo de violência:</label>
+    <select id="tipoViolencia" name="tipoViolencia" required>
+        <option value="">--Selecione--</option>
+        <option value="fisica">Física</option>
+        <option value="psicologica">Psicológica</option>
+        <option value="assedio">Assédio</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <!-- Se outro tipo -->
+    <div id="outroTipoContainer" style="display:none;">
+        <label for="outroTipo">Diga nos o tipo de violência:</label>
+        <input type="text" id="outroTipo" name="outroTipo">
+    </div>
+
+    <!-- Local -->
+    <label for="local">Local do ocorrido:</label>
+    <select id="local" name="local" required>
+        <option value="">--Selecione--</option>
+        <option value="bairroNatite">Bairro de Natite</option>
+        <option value="mercadoCentral">Mercado Central</option>
+        <option value="praDosHerois">Praça dos Heróis</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <!-- Se outro local -->
+    <div id="outroLocalContainer" style="display:none;">
+        <label for="outroLocal">Diga nos o local:</label>
+        <input type="text" id="outroLocal" name="outroLocal">
+    </div>
+
+    <!-- O que aconteceu -->
+    <label for="descricao">Conte-nos o que aconteceu:</label>
+    <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+    <!-- Botão de enviar -->
+    <button type="submit">Denunciar</button>
+
+</form>
+
+<div id="codigoDenuncia" style="margin-top:20px; font-weight:bold;"></div>
+
+</div>
+</main>
+
+<footer>
+<p>Cuidar da criança é nossa prioridade hoje, amanhã e sempre.</p>
+</footer>
+
+<script src="G.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    /* Centralização */
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+
+    /* Imagem de fundo */
+  background-image: url('ChatGPT Image Feb 14, 2026, 04_04_02 PM.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #3900f4; /* texto branco para contraste */
+}
